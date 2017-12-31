@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AnimalQuotes"
+             x:Class="AnimalQuotes.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Be Inspired"
+                Font="Times New Roman"
+                FontSize="Large"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,40,0,40"
+            />
+            <Image Source="inspiredcat001.png" 
+                   Margin="40,20,40,20" 
+                   BackgroundColor="Gold"  />
+
+            <Label HorizontalOptions="CenterAndExpand" Margin="20,0,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text= '"' FontAttributes="Italic" />
+                        <Span Text="Quote" FontAttributes="Italic" x:Name="QuoteString"/>
+                        <Span Text='"' FontAttributes="Italic"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="End" Margin="0,10,20,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="— Hunter S. Thompson" FontAttributes="Italic" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="OMG! So inspired! I'm done!" Margin="10,46,10,5" x:Name="DoneButton" Clicked="DoneButton_Clicked"/>
+            <Button Text="Not Inspired Enough, another!" Margin="10,0,10,24" x:Name="NextButton" Clicked="NextButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
