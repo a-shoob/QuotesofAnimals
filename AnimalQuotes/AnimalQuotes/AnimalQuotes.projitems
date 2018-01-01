@@ -21,5 +21,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)QuoteLib.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PhotoObj.cs" />
   </ItemGroup>
 </Project>
