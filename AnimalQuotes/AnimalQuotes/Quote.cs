@@ -10,15 +10,12 @@ namespace AnimalQuotes
         private String author;
         private String attribute;
 
-        
 
-        
         //Quote structure
         public Quote(String text, String author)
             {
                 this.text = text;
-                this.author = author;
-                
+                this.author = author;   
             }
 
         public string Text { get => text; set => text = value; }
